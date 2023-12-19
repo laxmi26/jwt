@@ -1,0 +1,28 @@
+
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGF4bWkiLCJpYXQiOjE3MDI5ODgzNzIsImV4cCI6MTcwMjk4ODQzMn0.iihWvD5E7iLgaxS7Ry4I4siSTIIQtQy2ux_SnTLVPis
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Laxmi"
+}
+
+###
+Post http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGF4bWkiLCJpYXQiOjE3MDI5ODc5MjV9.WtESF76sRcDfaQKoyejTlbVsX940D9NqKyk6qHiagtM"
+}
+
+###
+DELETE http://localhost:5000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGF4bWkiLCJpYXQiOjE3MDI5ODgzNzJ9.g5-L4d13eZFaPGdPVMUo3ZpLf0SlZYRtJWzuaSb7VEU"
+}
+
